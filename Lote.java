@@ -1,23 +1,22 @@
-import java.sql.Date;
-
 public class Lote {
     private int quantidade;
-    private Date dataV;
-    private Produto produto;
+    private String dataValidade;
+    private Product product;
 
     public int getQuantidade(){
         return this.quantidade;
     }
-    public Date getData(){
-        return this.dataV;
+    public String getData(){
+        return this.dataValidade;
     }
-    public Produto getProduto(){
-        return this.produto;
+    public Product getProduto(){
+        return this.product;
     }
 
-    public Lote(int novaQuantidade, Date novaData, Produto novoProduto){
-        this.dataV = novaData;
-        this.produto = novoProduto;
+    public Lote(int novaQuantidade, String novaData, Product novoProduct){
+        this.dataValidade = novaData;
+        this.product = novoProduct;
         this.quantidade = novaQuantidade;
     }
+
 }

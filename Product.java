@@ -1,17 +1,15 @@
-public class Produto {
+public class Product {
     private String nome;
     private String fabricante;
     private Double preco;
     
 
 
-    public Produto(String novoNome, String novoFabricante, Double novoPreco){
+    public Product(String novoNome, String novoFabricante, Double novoPreco){
         this.nome = novoNome;
         this.fabricante = novoFabricante;
         this.preco = novoPreco;
     }
-
-
 
     
     public String getNome(){
@@ -23,8 +21,6 @@ public class Produto {
     public Double getPreco(){
         return this.preco;
     }
-
-
 
 
     public void setNome(String novoNome){
